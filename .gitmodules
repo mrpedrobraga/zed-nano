@@ -1,0 +1,3 @@
+[submodule "grammars/nano"]
+	path = grammars/nano
+	url = https://github.com/mrpedrobraga/tree-sitter-nano.git

@@ -2,9 +2,13 @@ id = "nano"
 name = "Nano"
 version = "0.0.1"
 schema_version = 1
-authors = ["Pedro Braga <you@example.com>"]
-description = "Zed support for the nano programming language."
-repository = "https://github.com/your-name/my-zed-extension"
+authors = ["Pedro Braga <mrhenribraga@gmail.com>"]
+description = "nano support."
+repository = "https://github.com/mrpedrobraga/zed-nano"
+
+[language_servers.nnls]
+name = "NNLS"
+language = "nano"
 
 [grammars.nano]
 repository = "https://github.com/mrpedrobraga/tree-sitter-nano"

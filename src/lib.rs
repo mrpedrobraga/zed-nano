@@ -1,14 +1,28 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+use zed_extension_api as zed;
+
+struct ZedNanoExtension {
+    // ... state
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+impl zed::Extension for ZedNanoExtension {
+    fn new() -> Self
+    where
+        Self: Sized,
+    {
+        Self {}
+    }
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+    fn language_server_command(
+        &mut self,
+        config: zed::LanguageServerConfig,
+        worktree: &zed::Worktree,
+    ) -> zed::Result<zed::Command> {
+        Ok(zed::Command {
+            command: "echo".into(),
+            args: Default::default(),
+            env: Default::default(),
+        })
     }
 }
+
+zed::register_extension!(ZedNanoExtension);
