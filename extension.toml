@@ -6,10 +6,6 @@ authors = ["Pedro Braga <mrhenribraga@gmail.com>"]
 description = "nano support."
 repository = "https://github.com/mrpedrobraga/zed-nano"
 
-[language_servers.nnls]
-name = "NNLS"
-language = "nano"
-
 [grammars.nano]
 repository = "https://github.com/mrpedrobraga/tree-sitter-nano"
-commit = "9f1772961500fd7845864f04b9e8a5f71a047f7a"
+commit = "08a0fbc5fcac4a94fd0e126659300ae9bd4a6700"
