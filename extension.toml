@@ -1,0 +1,11 @@
+id = "nano"
+name = "Nano"
+version = "0.0.1"
+schema_version = 1
+authors = ["Pedro Braga <you@example.com>"]
+description = "Zed support for the nano programming language."
+repository = "https://github.com/your-name/my-zed-extension"
+
+[grammars.nano]
+repository = "https://github.com/mrpedrobraga/tree-sitter-nano"
+commit = "9f1772961500fd7845864f04b9e8a5f71a047f7a"
